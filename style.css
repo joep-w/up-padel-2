@@ -68,13 +68,13 @@ button:hover {
 }
 
 .button-secondary {
-  background: rgba(12, 159, 116, 0.08);
-  color: var(--text);
-  border-color: rgba(12, 159, 116, 0.16);
+  background: rgba(12, 159, 116, 0.24);
+  color: #f8fbff;
+  border-color: rgba(12, 159, 116, 0.22);
 }
 
 .button-secondary:hover {
-  background: rgba(12, 159, 116, 0.14);
+  background: rgba(12, 159, 116, 0.36);
 }
 
 .page-shell {
@@ -123,18 +123,26 @@ button:hover {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(12, 159, 116, 0.12);
   color: var(--text);
-  font-weight: 600;
-  transition: color 160ms ease;
+  font-weight: 700;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--primary);
+  background: var(--primary);
+  color: white;
+  transform: translateY(-1px);
 }
 
 .hero,
@@ -282,7 +290,26 @@ button:hover {
 .pricing-card {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.9rem;
+  min-height: 100%;
+}
+
+.pricing-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pricing-card strong {
+  display: block;
+  margin: 0;
+  margin-top: auto;
+  font-size: 1.85rem;
+  line-height: 1.1;
+}
+
+.pricing-card a.button,
+.pricing-card a.button-secondary {
+  margin-top: 0.75rem;
 }
 
 .pricing-card.featured {
@@ -326,7 +353,8 @@ button:hover {
 }
 
 .contact-card input,
-.contact-card textarea {
+.contact-card textarea,
+.contact-card select {
   width: 100%;
   padding: 1rem 1.1rem;
   border-radius: 16px;
