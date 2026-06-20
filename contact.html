@@ -1,34 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – UP PADEL</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">UP PADEL</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="over.html">Over mij</a>
+        <a href="pakketten.html">Lespakketten</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<header>
-  <h1>Contact</h1>
-</header>
+    <main>
+      <section class="page-hero page-hero-soft">
+        <div class="hero-content small">
+          <span class="eyebrow">Contact</span>
+          <h1>Bereik UP PADEL</h1>
+          <p>Stel een vraag, schrijf je in voor trainingen of plan een kennismaking. Wij beantwoorden je bericht snel.</p>
+        </div>
+      </section>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="over.html">Over mij</a>
-  <a href="pakketten.html">Lespakketten</a>
-  <a href="contact.html">Contact</a>
-</nav>
+      <section class="container contact-grid">
+        <article class="card contact-card">
+          <h2>Neem contact op</h2>
+          <p>Vul hieronder je gegevens in en we nemen zo snel mogelijk contact met je op.</p>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label>
+              <span>Naam</span>
+              <input type="text" name="name" placeholder="Naam" required>
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <label>
+              <span>Bericht</span>
+              <textarea name="message" rows="5" placeholder="Bericht of aanmelding" required></textarea>
+            </label>
+            <button type="submit">Verstuur bericht</button>
+          </form>
+        </article>
 
-<div class="container">
-  <div class="card">
-    <h2>Neem contact op</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Naam" required>
-      <input type="email" name="email" placeholder="E-mail" required>
-      <textarea name="message" rows="5" placeholder="Bericht of aanmelding" required></textarea>
-      <button type="submit">Verstuur</button>
-    </form>
+        <aside class="card info-card">
+          <h3>Contactinformatie</h3>
+          <p><strong>Locatie</strong><br>Padelcentrum regio Amsterdam</p>
+          <p><strong>Email</strong><br>info@up-padel.nl</p>
+          <p><strong>Telefoon</strong><br>06 12 34 56 78</p>
+          <p>Volg ons voor trainingstips en updates op sociale media.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>UP PADEL · Altijd scherp, altijd beter</p>
+    </footer>
   </div>
-</div>
-
 </body>
 </html>
