@@ -389,6 +389,8 @@ button:hover {
   border-radius: 18px;
   padding: 1rem 1.25rem;
   text-align: center;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .stat-grid strong {
