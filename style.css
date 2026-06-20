@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/tt-ramillas');
+
 :root {
   color-scheme: dark;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -95,10 +97,27 @@ button:hover {
   border-bottom: 1px solid rgba(15, 23, 42, 0.06);
 }
 
-.brand {
-  font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+.brand-link {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.brand-mark {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  object-fit: contain;
+}
+
+.brand-title {
+  font-family: "TT Ramillas", Inter, system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 .site-nav {
