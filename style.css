@@ -162,12 +162,14 @@ button:hover {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.42), rgba(15, 23, 42, 0.82));
+  z-index: 0;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.18), rgba(15, 23, 42, 0.5));
+  z-index: 0;
 }
 
 .hero-content,
@@ -176,6 +178,10 @@ button:hover {
   max-width: 760px;
   padding: 2rem;
   text-align: center;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  z-index: 1;
 }
 
 .page-hero-soft {
